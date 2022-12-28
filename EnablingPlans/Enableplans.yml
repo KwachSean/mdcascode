@@ -53,7 +53,7 @@ jobs:
         azPSVersion: latest  
     - name: Enable Kubernetes Service
       uses: Azure/powershell@v1
-      with:
+      with: 
       # specification of script
         inlineScript:
           Set-AzSecurityPricing -Name "KubernetesService" -PricingTier "Standard"
