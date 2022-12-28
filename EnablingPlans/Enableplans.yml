@@ -19,7 +19,7 @@ jobs:
     - name: Azure Login
        - uses: azure/login@v1.4.6
     with: 
-      credentials: '{"clientId":"${{ secrets.CLIENT_ID }}","clientSecret":"${{ secrets.CLIENT_SECRET }}","subscriptionId":"${{ secrets.SUBSCRIPTION_ID }}","tenantId":"${{ secrets.TENANT_ID }}"}'
+      credentials: ${{ secrets.CLIENT_ID }},${{ secrets.CLIENT_SECRET }},${{ secrets.SUBSCRIPTION_ID }},${{ secrets.TENANT_ID }}
       allow-no-subscriptions: true
        enable-AzPSSession: true   
           
