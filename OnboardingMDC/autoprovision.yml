@@ -29,3 +29,4 @@ jobs:
        inlineScript: 
         Set-AzSecurityAutoProvisioningSetting -Name "default" -EnableAutoProvision
        azPSVersion: latest  
+   
